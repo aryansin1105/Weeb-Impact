@@ -14,10 +14,38 @@
             background-position: center;
             position: relative;
             overflow: hidden;
+            z-index: 0;
+        }
+        .container{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin: auto;
+        }
+        .genshin_container,.hsr_container{
+          width: 40%;
+          position: absolute;
+          z-index: 1;
+        }
+        .genshin_container{
+          top: 25%;
+          left: 50px;
+        }
+        .hsr_container{
+          top: 25%;
+          right: 50px;
         }
     </style>
 </head>
 <body>
+  <div class="container">
+    <div class="genshin_container">
+      <img src="https://images8.alphacoders.com/110/1105699.jpg" alt="genshin_image1" style="height:300px;">
+    </div>
+    <div class="hsr_container">
+      <img src="https://images7.alphacoders.com/131/1316537.jpeg" alt="hsr1" style="height:300px;">
+    </div>
+  </div>
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
