@@ -42,6 +42,12 @@
   text-decoration: none;
   font-size: 17px;
 }
+.topnav a:hover{
+  border-bottom : solid white  3px ;
+  transition:.8s ease all;
+  -webkit-transition:.8s ease all; /* Safari and Chrome */
+  box-shadow: inset 0 -.1em rgba(0,.05,.1)
+}
 .side-bar{
     width: 50px;
     height: 100vh;
@@ -68,7 +74,30 @@
     position: absolute;
     bottom: 30px;
 }
-
+.game_container{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin: auto;
+        }
+        .feetcon,.boobcon{
+          width: 40%;
+          position: absolute;
+          z-index: 1;
+        }
+        .feetcon:hover,.boobcon:hover{
+          transform: scale(1.1);
+          transition:.8s ease all;
+          cursor: pointer;
+        }
+        .feetcon{
+          top: 25%;
+          left: 100px;
+        }
+        .boobcon{
+          top: 25%;
+          right: 100px;
+        }
 </style>
 </head>
 <body>
@@ -85,7 +114,7 @@
       </div>
       <div class="side-bar">
         <div class="social-links">
-            <img src="images/fb.png">
+            <a href="https://github.com/aryansin1105"><img src="images/git.png"></a>
             <img src="images/ig.png">
             <img src="images/tw.png">
         </div>
@@ -93,6 +122,14 @@
             <img src="images/share.png">
             <img src="images/info.png">
         </div>
+    </div>
+    <div class="game_container">
+      <div class="feetcon">
+        <img src="https://w.wallha.com/ws/12/cQP7BxNt.png" alt="feet" style="width: 450px;height:250px;">
+      </div>
+      <div class="boobcon">
+        <img src="https://gameloid.com/wp-content/uploads/2022/12/razmer-grudi-v-genshin-impact-u-kogo-iz-personazhej-samaja-bolshaja-grud-ab2d13c-800x400.jpg" alt="boob" style="width: 450px;height:250px;">        
+      </div>
     </div>
 </body>
 </html>

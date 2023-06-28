@@ -42,6 +42,12 @@
   text-decoration: none;
   font-size: 17px;
 }
+.topnav a:hover{
+  border-bottom : solid white  3px ;
+  transition:.8s ease all;
+  -webkit-transition:.8s ease all; /* Safari and Chrome */
+  box-shadow: inset 0 -.1em rgba(0,.05,.1)
+}
 .side-bar{
     width: 50px;
     height: 100vh;
@@ -68,6 +74,30 @@
     position: absolute;
     bottom: 30px;
 }
+.game_container{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin: auto;
+        }
+        .gamecon,.boobcon{
+          width: 40%;
+          position: absolute;
+          z-index: 1;
+        }
+        .gamecon:hover,.boobcon:hover{
+          transform: scale(1.1);
+          transition:.8s ease all;
+          cursor: pointer;
+        }
+        .gamecon{
+          top: 25%;
+          left: 100px;
+        }
+        .boobcon{
+          top: 25%;
+          right: 100px;
+        }
 
 </style>
 </head>
@@ -85,7 +115,7 @@
       </div>
       <div class="side-bar">
         <div class="social-links">
-            <img src="images/fb.png">
+          <a href="https://github.com/aryansin1105"><img src="images/git.png"></a>
             <img src="images/ig.png">
             <img src="images/tw.png">
         </div>
@@ -93,6 +123,14 @@
             <img src="images/share.png">
             <img src="images/info.png">
         </div>
+    </div>
+    <div class="game_container">
+      <div class="gamecon">
+        <img src="https://staticc.sportskeeda.com/editor/2023/04/a80f3-16823193501777-1920.jpg" alt="game" style="width: 450px;height:250px;">
+      </div>
+      <div class="boobcon">
+        <img src="https://embed.pixiv.net/artwork.php?illust_id=108357989" alt="boob" style="width: 450px;height:250px;">        
+      </div>
     </div>
 </body>
 </html>
